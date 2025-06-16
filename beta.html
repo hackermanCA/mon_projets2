@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bien-être Naturel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Ajout du lien Remixicon pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="header-banner">
+        <div class="container header-flex">
+            <div class="flex items-center">
+                <h1 class="brand">Bien-être</h1>
+            </div>
+            <nav class="nav">
+                <a href="#accueil">Accueil</a>
+                <a href="#section">À propos</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="menu-icon">
+                <i class="ri-menu-line text-gray-700 ri-xl"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Prenez soin de vous naturellement</h1>
+            <p class="hero-desc">Découvrez des conseils simples et efficaces pour améliorer votre bien-être au quotidien. Notre approche holistique combine santé, alimentation, remèdes naturels et exercices physiques.</p>
+            <button class="hero-btn">Commencer maintenant</button>
+        </div>
+    </section>
+
+    <!-- Section Catégories -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">Nos catégories de bien-être</div>
+            <div class="section-desc">Explorez nos quatre piliers pour une vie équilibrée et saine. Cliquez sur une catégorie pour découvrir des conseils personnalisés.</div>
+            <div class="categories-list">
+                <div class="category-card" data-category="sante">
+                    <div class="category-icon">
+                        <i class="ri-heart-pulse-line"></i>
+                    </div>
+                    <div class="category-title">Santé</div>
+                    <div class="category-desc">Conseils pour maintenir une bonne santé physique et mentale.</div>
+                </div>
+                <div class="category-card" data-category="alimentation">
+                    <div class="category-icon">
+                        <i class="ri-apple-line"></i>
+                    </div>
+                    <div class="category-title">Alimentation</div>
+                    <div class="category-desc">Découvrez les aliments qui nourrissent votre corps et votre esprit.</div>
+                </div>
+                <div class="category-card" data-category="remedes">
+                    <div class="category-icon">
+                        <i class="ri-leaf-line"></i>
+                    </div>
+                    <div class="category-title">Remèdes naturels</div>
+                    <div class="category-desc">Solutions naturelles pour soulager les maux du quotidien.</div>
+                </div>
+                <div class="category-card" data-category="exercices">
+                    <div class="category-icon">
+                        <i class="ri-run-line"></i>
+                    </div>
+                    <div class="category-title">Exercices</div>
+                    <div class="category-desc">Activités physiques adaptées à tous les niveaux pour rester en forme.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section de contenu dynamique -->
+    <section id="content-section">
+        <div class="container">
+            <div id="content-container">
+                <!-- Le contenu sera injecté ici dynamiquement -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section>
+        <div class="container">
+            <div>
+                <div>Restez informé</div>
+                <div>Inscrivez-vous à notre newsletter pour recevoir nos derniers conseils et astuces de bien-être directement dans votre boîte mail.</div>
+                <form>
+                    <input type="email" placeholder="Votre adresse email">
+                    <button type="submit">S'abonner</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="testimonials-title">Ce que disent nos lecteurs</div>
+            <div class="testimonials-desc">Découvrez comment nos conseils ont aidé d'autres personnes à améliorer leur bien-être au quotidien.</div>
+            <div class="testimonials-list">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <i class="ri-user-line"></i>
+                        </div>
+                        <div>
+                            <div class="testimonial-name">Sophie Dupont</div>
+                            <div class="testimonial-location">Paris</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">"Depuis que j'ai commencé à suivre les conseils d'alimentation, j'ai remarqué une nette amélioration de mon énergie au quotidien. Les recettes sont simples et délicieuses !"</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <i class="ri-user-line"></i>
+                        </div>
+                        <div>
+                            <div class="testimonial-name">Thomas Moreau</div>
+                            <div class="testimonial-location">Lyon</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">"Les exercices proposés sont parfaits pour mon emploi du temps chargé. En seulement 15 minutes par jour, je me sens plus détendu et en meilleure forme physique."</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <i class="ri-user-line"></i>
+                        </div>
+                        <div>
+                            <div class="testimonial-name">Claire Lefevre</div>
+                            <div class="testimonial-location">Bordeaux</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">"Les remèdes naturels contre le stress m'ont vraiment aidée pendant une période difficile. Je dors mieux et je me sens plus sereine au quotidien."</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-main">
+                <div>
+                    <div class="footer-brand">Bien-être</div>
+                    <div>Votre guide pour une vie saine et équilibrée, naturellement.</div>
+                </div>
+                <div>
+                    <div class="footer-title">Catégories</div>
+                    <ul class="footer-links">
+                        <li><a href="#">Santé</a></li>
+                        <li><a href="#">Alimentation</a></li>
+                        <li><a href="#">Remèdes naturels</a></li>
+                        <li><a href="#">Exercices</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-title">Liens utiles</div>
+                    <ul class="footer-links">
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-title">Suivez-nous</div>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" class="footer-social-link"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="footer-social-link"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" class="footer-social-link"><i class="ri-pinterest-line"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Bien-être Naturel. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script id="category-content">
+        document.addEventListener('DOMContentLoaded', function() {
+            const contentSection = document.getElementById('content-section');
+            const contentContainer = document.getElementById('content-container');
+            const categoryCards = document.querySelectorAll('.category-card');
+            
+            const categoryContent = {
+                sante: {
+                    title: "Conseils pour votre santé",
+                    image: "https://readdy.ai/api/search-image?query=A%20serene%20image%20showing%20a%20person%20meditating%20in%20a%20peaceful%20natural%20setting%20with%20soft%20morning%20light.%20The%20image%20conveys%20mental%20wellbeing%2C%20mindfulness%20and%20inner%20peace.%20The%20composition%20is%20balanced%20with%20natural%20elements%20like%20plants%20and%20water%2C%20creating%20a%20harmonious%20atmosphere%20for%20health%20and%20wellness%20practices.&width=800&height=500&seq=sante123&orientation=landscape",
+                    content: `
+    <div>
+        <div>
+            <h3>Prenez soin de votre corps et de votre esprit</h3>
+            <p>La santé est un équilibre délicat entre le bien-être physique et mental. Voici quelques conseils pour maintenir cet équilibre au quotidien :</p>
+            <ul>
+                <li>
+                    <div>
+                        <i class="ri-check-line"></i>
+                    </div>
+                    <span>Dormez 7 à 8 heures par nuit pour permettre à votre corps de récupérer</span>
+                </li>
+                <li>
+                    <div>
+                        <i class="ri-check-line"></i>
+                    </div>
+                    <span>Pratiquez la méditation ou la respiration profonde pendant 10 minutes chaque jour</span>
+                </li>
+                <li>
+                    <div>
+                        <i class="ri-check-line"></i>
+                    </div>
+                    <span>Hydratez-vous correctement en buvant au moins 1,5 litre d'eau par jour</span>
+                </li>
+                <li>
+                    <div>
+                        <i class="ri-check-line"></i>
+                    </div>
+                    <span>Limitez votre exposition aux écrans, surtout avant de vous coucher</span>
+                </li>
+                <li>
+                    <div>
+                        <i class="ri-check-line"></i>
+                    </div>
+                    <span>Prenez le temps de vous reconnecter à la nature régulièrement</span>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img src="${this.image}" alt="Santé et bien-être">
+        </div>
+    </div>
+    <div>
+        <h3>Routine quotidienne recommandée</h3>
+        <div>
+            <div>
+                <div>
+                    <h4>Matin</h4>
+                    <ul>
+                        <li>
+                            <div>
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <span>Boire un grand verre d'eau tiède avec du citron</span>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <span>5 minutes de méditation ou de respiration profonde</span>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <span>Petit-déjeuner équilibré riche en protéines</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Journée</h4>
+                    <ul>
+                        <li>
+                            <div>
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <span>Faire une pause de 5 minutes toutes les heures</span>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <span>Boire régulièrement de l'eau tout au long de la journée</span>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <span>Prendre un repas équilibré à midi</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Soir</h4>
+                    <ul>
+                        <li>
+                            <div>
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <span>Dîner léger au moins 2h avant le coucher</span>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <span>Limiter les écrans 1h avant de dormir</span>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <span>Pratiquer des étirements doux ou du yoga</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+`,
+                },
+                alimentation: {
+                    title: "Conseils pour une alimentation saine",
+                    image: "https://readdy.ai/api/search-image?query=A%20beautiful%20arrangement%20of%20fresh%2C%20colorful%20fruits%20and%20vegetables%20on%20a%20clean%20white%20surface.%20The%20image%20shows%20a%20variety%20of%20produce%20including%20leafy%20greens%2C%20colorful%20berries%2C%20citrus%20fruits%2C%20and%20root%20vegetables.%20The%20composition%20is%20bright%2C%20vibrant%20and%20appetizing%2C%20perfect%20for%20representing%20healthy%20eating%20and%20nutrition.&width=800&height=500&seq=alim123&orientation=landscape",
+                    content: `
+    <div>
+        <div>
+            <h3>Nourrissez votre corps intelligemment</h3>
+            <p>Une alimentation équilibrée est la base d'une bonne santé. Voici quelques principes à suivre pour adopter une alimentation saine :</p>
+            <ul>
+                <li>
+                    <div>
+                        <i class="ri-check-line"></i>
+                    </div>
+                    <span>Privilégiez les aliments non transformés et les produits frais</span>
+                </li>
+                <li>
+                    <div>
+                        <i class="ri-check-line"></i>
+                    </div>
+                    <span>Consommez au moins 5 portions de fruits et légumes par jour</span>
+                </li>
+                <li>
+                    <div>
+                        <i class="ri-check-line"></i>
+                    </div>
+                    <span>Limitez votre consommation de sucres ajoutés et de sel</span>
+                </li>
+                <li>
+                    <div>
+                        <i class="ri-check-line"></i>
+                    </div>
+                    <span>Optez pour des graisses saines comme l'huile d'olive, les avocats et les noix</span>
+                </li>
+                <li>
+                    <div>
+                        <i class="ri-check-line"></i>
+                    </div>
+                    <span>Variez les sources de protéines (légumineuses, poissons, volaille)</span>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img src="${this.image}" alt="Alimentation saine">
+        </div>
+    </div>
+    <div>
+        <h3>Les superaliments à intégrer dans votre alimentation</h3>
+        <div>
+            <div>
+                <div>
+                    <h4>Graines de chia</h4>
+                    <p>Riches en oméga-3, fibres et protéines. Idéales dans les smoothies ou yaourts.</p>
+                </div>
+                <div>
+                    <h4>Curcuma</h4>
+                    <p>Puissant anti-inflammatoire et antioxydant. À ajouter dans vos plats ou en infusion.</p>
+                </div>
+                <div>
+                    <h4>Chou kale</h4>
+                    <p>Concentré de vitamines et minéraux. Parfait en salade, smoothie ou chips au four.</p>
+                </div>
+                <div>
+                    <h4>Baies de goji</h4>
+                    <p>Antioxydants puissants qui soutiennent le système immunitaire et la vision.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h3>Exemple de menu équilibré pour une journée</h3>
+        <div>
+            <div>
+                <div>
+                    <h4>Petit-déjeuner</h4>
+                    <p>Bol de yaourt grec avec :</p>
+                    <ul>
+                        <li>• Une poignée de myrtilles fraîches</li>
+                        <li>• 1 cuillère à soupe de graines de chia</li>
+                        <li>• 1 cuillère à café de miel</li>
+                        <li>• Quelques amandes effilées</li>
+                    </ul>
+                    <p>Boisson :</p>
+                    <p>Thé vert ou café sans sucre</p>
+                </div>
+                <div>
+                    <h4>Déjeuner</h4>
+                    <p>Salade complète :</p>
+                    <ul>
+                        <li>• Base de quinoa et légumes verts</li>
+                        <li>• Avocat et tomates cerises</li>
+                        <li>• Poulet grillé ou tofu</li>
+                        <li>• Vinaigrette à l'huile d'olive et citron</li>
+                    </ul>
+                    <p>Dessert :</p>
+                    <p>Une pomme ou une poire</p>
+                </div>
+                <div>
+                    <h4>Dîner</h4>
+                    <p>Plat principal :</p>
+                    <ul>
+                        <li>• Pavé de saumon grillé</li>
+                        <li>• Purée de patate douce</li>
+                        <li>• Légumes verts de saison cuits à la vapeur</li>
+                    </ul>
+                    <p>Collation du soir (optionnelle) :</p>
+                    <p>Infusion de camomille et 2 carrés de chocolat noir</p>
+                </div>
+            </div>
+        </div>
+    </div>
+`,
+                },
+                remedes: {
+                    title: "Remèdes naturels",
+                    image: "https://readdy.ai/api/search-image?query=A%20beautiful%20arrangement%20of%20natural%20remedies%20including%20fresh%20herbs%2C%20essential%20oils%20in%20small%20bottles%2C%20honey%2C%20lemon%2C%20and%20ginger%20on%20a%20wooden%20surface.%20The%20image%20has%20soft%2C%20natural%20lighting%20and%20shows%20various%20traditional%20healing%20ingredients%20used%20in%20homemade%20remedies.%20The%20composition%20is%20elegant%20and%20suggests%20natural%20health%20solutions.&width=800&height=500&seq=remedes123&orientation=landscape",
+                    content: `
+    <div>
+        <div>
+            <h3>Solutions naturelles pour les maux du quotidien</h3>
+            <p>La nature nous offre de nombreux remèdes pour soulager les petits maux du quotidien. Voici quelques solutions naturelles efficaces :</p>
+            <ul>
+                <li>
+                    <div>
+                        <i class="ri-check-line"></i>
+                    </div>
+                    <span>Utilisez le miel et le citron pour soulager les maux de gorge</span>
+                </li>
+                <li>
+                    <div>
+                        <i class="ri-check-line"></i>
+                    </div>
+                    <span>Appliquez de l'huile essentielle de lavande pour favoriser le sommeil</span>
+                </li>
+                <li>
+                    <div>
+                        <i class="ri-check-line"></i>
+                    </div>
+                    <span>Préparez une infusion de gingembre pour apaiser les nausées</span>
+                </li>
+                <li>
+                    <div>
+                        <i class="ri-check-line"></i>
+                    </div>
+                    <span>Utilisez l'aloe vera pour calmer les irritations cutanées</span>
+                </li>
+                <li>
+                    <div>
+                        <i class="ri-check-line"></i>
+                    </div>
+                    <span>Pratiquez des exercices de respiration pour réduire le stress</span>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img src="${this.image}" alt="Remèdes naturels">
+        </div>
+    </div>
+    <div>
+        <h3>Remèdes naturels pour problèmes courants</h3>
+        <div>
+            <div>
+                <div>
+                    <h4>Stress et anxiété</h4>
+                    <ul>
+                        <li>
+                            <div>
+                                <i class="ri-plant-line"></i>
+                            </div>
+                            <div>
+                                <span>Tisane de camomille</span>
+                                <p>Buvez une tasse avant le coucher pour favoriser la détente.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="ri-drop-line"></i>
+                            </div>
+                            <div>
+                                <span>Huile essentielle de lavande</span>
+                                <p>Quelques gouttes sur l'oreiller ou en diffusion pour calmer l'esprit.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="ri-heart-pulse-line"></i>
+                            </div>
+                            <div>
+                                <span>Respiration 4-7-8</span>
+                                <p>Inspirez pendant 4 secondes, retenez pendant 7, expirez pendant 8.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Troubles du sommeil</h4>
+                    <ul>
+                        <li>
+                            <div>
+                                <i class="ri-cup-line"></i>
+                            </div>
+                            <div>
+                                <span>Tisane de valériane</span>
+                                <p>Une tasse 30 minutes avant le coucher pour favoriser l'endormissement.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="ri-moon-line"></i>
+                            </div>
+                            <div>
+                                <span>Mélatonine naturelle</span>
+                                <p>Consommez des cerises, bananes ou noix qui en contiennent naturellement.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="ri-massage-line"></i>
+                            </div>
+                            <div>
+                                <span>Bain chaud aux sels de magnésium</span>
+                                <p>Détend les muscles et prépare le corps au sommeil.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Rhumes et infections</h4>
+                    <ul>
+                        <li>
+                            <div>
+                                <i class="ri-drop-line"></i>
+                            </div>
+                            <div>
+                                <span>Sirop de thym et de miel</span>
+                                <p>Antibactérien naturel, efficace contre la toux et les maux de gorge.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="ri-plant-line"></i>
+                            </div>
+                            <div>
+                                <span>Infusion d'échinacée</span>
+                                <p>Stimule le système immunitaire et réduit la durée des symptômes.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="ri-seedling-line"></i>
+                            </div>
+                            <div>
+                                <span>Inhalation d'huiles essentielles</span>
+                                <p>Eucalyptus et tea tree pour dégager les voies respiratoires.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Digestion et transit</h4>
+                    <ul>
+                        <li>
+                            <div>
+                                <i class="ri-plant-line"></i>
+                            </div>
+                            <div>
+                                <span>Infusion de fenouil</span>
+                                <p>Soulage les ballonnements et favorise la digestion.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="ri-seedling-line"></i>
+                            </div>
+                            <div>
+                                <span>Graines de lin</span>
+                                <p>Riches en fibres, elles régulent le transit intestinal.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="ri-drop-line"></i>
+                            </div>
+                            <div>
+                                <span>Huile essentielle de menthe poivrée</span>
+                                <p>1 goutte dans une cuillère de miel contre les nausées et indigestions.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+`,
+                },
+                exercices: {
+                    title: "Exercices pour rester en forme",
+                    image: "https://readdy.ai/api/search-image?query=A%20person%20practicing%20yoga%20in%20a%20peaceful%20natural%20setting%20with%20soft%20morning%20light.%20The%20image%20shows%20a%20balanced%20yoga%20pose%20that%20demonstrates%20flexibility%20and%20strength.%20The%20environment%20is%20serene%20with%20plants%20and%20natural%20elements%20creating%20a%20harmonious%20atmosphere%20for%20exercise%20and%20wellness%20practices.&width=800&height=500&seq=exercice123&orientation=landscape",
+                    content: `
+    <div>
+        <div>
+            <h3>Bougez pour votre bien-être</h3>
+            <p>L'activité physique régulière est essentielle pour maintenir une bonne santé. Voici quelques conseils pour intégrer plus de mouvement dans votre quotidien :</p>
+            <ul>
+                <li>
+                    <div>
+                        <i class="ri-check-line"></i>
+                    </div>
+                    <span>Visez au moins 30 minutes d'activité physique modérée par jour</span>
+                </li>
+                <li>
+                    <div>
+                        <i class="ri-check-line"></i>
+                    </div>
+                    <span>Alternez entre exercices cardiovasculaires et renforcement musculaire</span>
+                </li>
+                <li>
+                    <div>
+                        <i class="ri-check-line"></i>
+                    </div>
+                    <span>Intégrez des activités comme le yoga ou le tai-chi pour améliorer la souplesse</span>
+                </li>
+                <li>
+                    <div>
+                        <i class="ri-check-line"></i>
+                    </div>
+                    <span>Privilégiez les escaliers plutôt que l'ascenseur dans votre quotidien</span>
+                </li>
+                <li>
+                    <div>
+                        <i class="ri-check-line"></i>
+                    </div>
+                    <span>Écoutez votre corps et adaptez l'intensité à votre condition physique</span>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img src="${this.image}" alt="Exercices physiques">
+        </div>
+    </div>
+    <div>
+        <h3>Programme d'exercices quotidiens (15 minutes)</h3>
+        <div>
+            <p>Ce programme rapide peut être réalisé chaque matin pour commencer la journée en pleine forme. Chaque exercice doit être effectué pendant 45 secondes avec 15 secondes de repos entre chaque.</p>
+            <div>
+                <div>
+                    <h4>Échauffement (3 min)</h4>
+                    <ul>
+                        <li>
+                            <div>
+                                <span>1</span>
+                            </div>
+                            <div>
+                                <span>Marche sur place</span>
+                                <p>Levez bien les genoux pour activer la circulation.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>2</span>
+                            </div>
+                            <div>
+                                <span>Rotations des épaules</span>
+                                <p>Avant puis arrière pour mobiliser l'articulation.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>3</span>
+                            </div>
+                            <div>
+                                <span>Rotations du bassin</span>
+                                <p>Mains sur les hanches, effectuez des cercles.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Renforcement (9 min)</h4>
+                    <ul>
+                        <li>
+                            <div>
+                                <span>1</span>
+                            </div>
+                            <div>
+                                <span>Squats</span>
+                                <p>Gardez le dos droit et les pieds écartés.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>2</span>
+                            </div>
+                            <div>
+                                <span>Pompes adaptées</span>
+                                <p>Sur les genoux si nécessaire pour débuter.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>3</span>
+                            </div>
+                            <div>
+                                <span>Planche</span>
+                                <p>Maintenez la position en engageant les abdominaux.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>4</span>
+                            </div>
+                            <div>
+                                <span>Fentes avant</span>
+                                <p>Alternez jambe droite et jambe gauche.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>5</span>
+                            </div>
+                            <div>
+                                <span>Relevés de jambes</span>
+                                <p>Allongé sur le dos pour travailler les abdominaux.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>6</span>
+                            </div>
+                            <div>
+                                <span>Mountain climbers</span>
+                                <p>Ramenez alternativement les genoux vers la poitrine.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Étirements (3 min)</h4>
+                    <ul>
+                        <li>
+                            <div>
+                                <span>1</span>
+                            </div>
+                            <div>
+                                <span>Étirement des quadriceps</span>
+                                <p>Debout, ramenez le talon vers la fesse.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>2</span>
+                            </div>
+                            <div>
+                                <span>Étirement des ischio-jambiers</span>
+                                <p>Jambe tendue devant, penchez-vous légèrement.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>3</span>
+                            </div>
+                            <div>
+                                <span>Étirement des épaules</span>
+                                <p>Ramenez un bras devant la poitrine et maintenez.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h3>Activités recommandées selon vos objectifs</h3>
+        <div>
+            <div>
+                <div>
+                    <h4>Améliorer l'endurance</h4>
+                    <ul>
+                        <li>• Marche rapide (30-45 min)</li>
+                        <li>• Natation (20-30 min)</li>
+                        <li>• Vélo (30-45 min)</li>
+                        <li>• Course à pied légère (20-30 min)</li>
+                        <li>• Danse (30-45 min)</li>
+                    </ul>
+                    <p>Fréquence recommandée : 3-5 fois par semaine</p>
+                </div>
+                <div>
+                    <h4>Tonifier les muscles</h4>
+                    <ul>
+                        <li>• Pilates (45-60 min)</li>
+                        <li>• Yoga dynamique (45-60 min)</li>
+                        <li>• Exercices avec bandes élastiques (20-30 min)</li>
+                        <li>• Circuit training (20-30 min)</li>
+                        <li>• Musculation légère (30-45 min)</li>
+                    </ul>
+                    <p>Fréquence recommandée : 2-3 fois par semaine</p>
+                </div>
+                <div>
+                    <h4>Réduire le stress</h4>
+                    <ul>
+                        <li>• Yoga doux (45-60 min)</li>
+                        <li>• Tai-chi (30-45 min)</li>
+                        <li>• Marche en pleine conscience (30 min)</li>
+                        <li>• Étirements profonds (20-30 min)</li>
+                        <li>• Méditation active (15-20 min)</li>
+                    </ul>
+                    <p>Fréquence recommandée : 3-7 fois par semaine</p>
+                </div>
+            </div>
+        </div>
+    </div>
+`,
+                }
+            };
+            
+            categoryCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    const content = categoryContent[category];
+                    
+                    if (content) {
+                        contentContainer.innerHTML = `
+                            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">${content.title}</h2>
+                            ${content.content}
+                        `;
+                        
+                        contentSection.classList.add('active');
+                        
+                        // Scroll to content section
+                        setTimeout(() => {
+                            contentSection.scrollIntoView({ behavior: 'smooth' });
+                        }, 100);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
